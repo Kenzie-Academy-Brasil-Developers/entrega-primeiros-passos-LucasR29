@@ -4,7 +4,7 @@ const currency = function(number){
 
 let definir_valores = prompt("Desaja definir novos valores aos produtos?")
 
-if (definir_valores == "sim"){
+if (definir_valores == "sim" || "Sim"){
     let refrigerante = parseFloat(prompt("Qual o valor do refrigerante?"))
     let macarrao = parseFloat(prompt("Qual o valor do macarrão?"))
     let ervilha = parseFloat(prompt("Qual o valor da ervilha"))
