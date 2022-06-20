@@ -1,7 +1,4 @@
-const currency = function(number){
-    return new Intl.NumberFormat('pt-BR', {style: 'currency',currency: 'BRL', minimumFractionDigits: 2}).format(number);
-}
- 
+
 
 const refrigerante = parseFloat(prompt("Qual o valor do refrigerante?"))
 const macarrao = parseFloat(prompt("Qual o valor do macarrão?"))
@@ -20,7 +17,7 @@ let metadeVinho = (valorVinho / 2);
 let valor_total = valorFeijao + valorArroz + valorErvilha + valorMacarrao + valorReferigerante;
     
 if((valor_total * 100) % 2 == 0){
-    alert("PARABÉNSSS o valor da compra é par portanto o bêbado paga: " + currency(((valor_total/2) + valorVinho)) + " o santo paga: " + currency(valor_total/2))
+    alert("PARABÉNSSS o valor da compra é par portanto o bêbado paga: " + currency((valor_total/2) + valorVinho ) + " o santo paga: " + currency(valor_total/2))
     console.log(`O valor total da compra é ${valor_total}`)
 }else{
     alert('Que pena, total impar, a amizade prevalesce cada um paga: ' + currency((valor_total+valorVinho)/2))
